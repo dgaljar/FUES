@@ -1,0 +1,81 @@
+.about {
+  .aboutinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+  }
+
+  h1 {
+    color: var(--primary);
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  p {
+    line-height: 30px;
+  }
+  ul {
+    list-style: none; /* Remove default list bullets */
+    padding-left: 20px; /* Optional: add padding for custom bullets */
+  }
+  ul li {
+    position: relative;
+    padding-left: 10px;
+    padding-bottom: 20px;
+  }
+
+  ul li::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    left: -15px;
+    top: 5px;
+    width: 16px; /* Set width of the custom bullet */
+    height: 16px; /* Set height of the custom bullet */
+    background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"%3E%3Cpath d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z" fill="%23e0004d" /%3E%3C/svg%3E')
+      no-repeat center center;
+    background-size: contain; /* Make sure it scales correctly */
+    margin-right: 10px; /* Optional: space between bullet and text */
+  }
+
+  .mission-vision {
+    border-radius: 1rem;
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+    object-fit: cover;
+  }
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .profile img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .lazy-load-image-background {
+    display: flex!important;
+    justify-content: center;
+    width: 100%;
+}
+}
+
+@media (max-width: 1060px) {
+  .about .profile img {
+    width: 200px;
+    height: 200px;
+  }
+}

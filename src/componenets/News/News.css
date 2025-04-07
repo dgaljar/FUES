@@ -1,0 +1,33 @@
+.news {
+
+    margin: 40px 0;
+    min-height: calc(100vh - 72px);
+
+    h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        color: var(--primary);
+        margin-bottom: 40px;
+    }
+
+    h2 {
+        font-size: 2rem;
+        color: var(--dark);
+        margin-bottom: 20px;
+    }
+    img {
+        object-fit: cover;
+        height: 214px;
+        width: 100%;
+        border-radius: 1rem;
+        box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+    }
+
+    .news-container{
+        margin-bottom: 40px;
+        p {
+            margin-top: 10px;
+        }
+    }
+}
+

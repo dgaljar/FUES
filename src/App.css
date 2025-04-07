@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+    --primary: #e0004d;
+    --dark: #2a2a2a;
+    --offwhite: #FAF9F6;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+html {
+    scroll-behavior: smooth;
   }
+  
+body {
+    font-family: "Montserrat", serif;
+    overflow-x: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
-.App-link {
-  color: #61dafb;
+img {
+    width: 100%;
+}
+.container {
+    max-width: 1440px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2,h3,h4 {
+    font-weight: 600;
+}
+
+h2{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    color: var(--primary);
+}
+
+.cta {
+    background-color: var(--primary);
+    padding: 10px 15px;
+    border-radius: 1.5rem;
+    box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.75);
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 300ms ease-in-out;
+}
+
+.cta:hover {
+    transform: scale(1.1);
+}
+
+.cta:active {
+    transform: scale(1.05);
+}
+
+.CokkieConsent div:nth-of-type(2) {
+    display: flex;
+}
+
+
+@media (max-width:768px) {
+    .counterHolder {
+        padding-top: 2rem;
+    }
+    .counterHolder:nth-child(2) {
+        border: none
+     }
 }

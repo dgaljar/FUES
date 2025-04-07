@@ -1,0 +1,16 @@
+/* Partners */
+
+.partneri {
+    margin-bottom: 3rem;
+}
+
+.slick-slide {
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.partners img{
+    width: 100px;
+}

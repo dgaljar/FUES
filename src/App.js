@@ -1,24 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import "./App.css";
+import { BrowserRouter as Router } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
+import Header from "./componenets/Header/Header";
+import Footer from "./componenets/Footer/Footer";
+import Home from "./componenets/Home/Home";
+import ContactPage from "./componenets/Contact/ContactPage";
+import About from "./componenets/About/About";
+import News from "./componenets/News/News";
+import NewsSingle from "./componenets/News/NewsSingle";
+import Cookies from "./componenets/Cookies/Cookies";
+import NotFound from "./componenets/Home/NotFound"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <Cookies />
+        <Header />
+
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path="/kontakt" element={<ContactPage />} />
+          <Route path="/o-nama" element={<About />} />
+          <Route path="/novosti" element={<News />} />
+          <Route path="/novosti/:slug" element={<NewsSingle />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+
+        <Footer />
+      </Router>
+    </>
   );
 }
 

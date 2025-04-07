@@ -1,0 +1,21 @@
+.kontakt-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+
+
+    a {
+        text-decoration: underline;
+        color: var(--primary);
+    }
+
+    a:hover {
+        color: black;
+    }
+}
+
+.info {
+    margin-top: 16px;
+}
+

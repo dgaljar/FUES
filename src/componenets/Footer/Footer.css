@@ -1,0 +1,40 @@
+/* footer */
+footer {
+  background: linear-gradient(135deg, #2a2a2a 0%, #3a3a3a 100%);
+  color: #e0004d;
+  color: var(--offwhite);
+  padding-top: 3rem;
+
+  img {
+    max-width: 64px;
+  }
+
+  a:hover {
+    color: black;
+  }
+}
+
+.footerContact {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.footerSocial {
+  list-style: none;
+  padding: 0;
+
+  a:hover {
+    color: var(--primary);
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.copyright {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
