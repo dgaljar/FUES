@@ -19,7 +19,7 @@ function WhyUs() {
           </div>
           <div className="col-md-6">
             <div className="whyUsImg">
-              <LazyLoadImage src="img/FUES_web_grafika.png" alt="Obnovljiva energija" effect="blur" />
+              <LazyLoadImage src="img/FUES_web_grafika.webp" alt="Obnovljiva energija" effect="blur" />
             </div>
           </div>
         </div>

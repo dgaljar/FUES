@@ -112,7 +112,7 @@ function Benefits() {
           </div>
           <div className="col-md-6 order-md-1">
             <div className="benefitImg p-4">
-              <LazyLoadImage src="img/benefit.jpg" alt="Solarni paneli" effect="blur" />
+              <LazyLoadImage src="img/benefit.webp" alt="Solarni paneli" effect="blur" />
             </div>
           </div>
         </div>

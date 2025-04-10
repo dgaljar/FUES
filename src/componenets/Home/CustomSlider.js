@@ -1,45 +1,29 @@
-import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import React from 'react';
+import { Swiper } from 'swiper/react';
+import 'swiper/css'; 
 
 
-function CustomSlider({ children, slidesNbr }) {
-  var settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: slidesNbr,
-    slidesToScroll: 4,
-    initialSlide: 0,
-    responsive: [
-      {
-        breakpoint:1280,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          initialSlide: 1,
-        }
-      },
-      {
-        breakpoint: 938,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 1
-        }
-      },
-      {
-        breakpoint: 650,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
-  };
+const CustomSwiper = ({ children, slidesNbr }) => {
+  return (
+    <Swiper
+      spaceBetween={10}
+      slidesPerView={1}
+      loop={true}
+      breakpoints={{
+        650: {
+          slidesPerView: 1,
+        },
+        938: {
+          slidesPerView: 3,
+        },
+        1280: {
+          slidesPerView: slidesNbr,
+        },
+      }}
+    >
+      {children}
+    </Swiper>
+  );
+};
 
-  return <Slider {...settings}>{children}</Slider>;
-}
-
-export default CustomSlider;
+export default CustomSwiper;

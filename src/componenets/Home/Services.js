@@ -38,7 +38,7 @@ function Services() {
         <div className="row">
           <div id="services1" className="col-md-4 animate__animated">
             <div className="serviceInfo d-flex flex-column justify-content-between align-items-center p-4">
-              <LazyLoadImage src="img/imgLeft1.png" alt="Solarne elektrane" effect="blur" />
+              <LazyLoadImage src="img/solarne-elektrane.webp" alt="Solarne elektrane" effect="blur" />
               <h2 className="text-center text-md-start">Solarne eleketrane</h2>
               <p>
                 Početak naše vizije stavlja fotonaponske sustave u prvi plan,
@@ -54,7 +54,7 @@ function Services() {
           </div>
           <div id="services2" className="col-md-4 animate__animated">
             <div className="serviceInfo d-flex flex-column justify-content-between align-items-center p-4">
-              <LazyLoadImage src="img/imgRight2.png" alt="Inovativna tehnologija" effect="blur" />
+              <LazyLoadImage src="img/inovativne-tehnologije.webp" alt="Inovativna tehnologija" effect="blur" />
               <h2 className="text-center text-md-start">
                 Inovativna Tehnologija
               </h2>
@@ -73,7 +73,7 @@ function Services() {
           </div>
           <div id="services3" className="col-md-4 animate__animated">
             <div className="serviceInfo d-flex flex-column justify-content-between align-items-center p-4">
-              <LazyLoadImage src="img/imgRight1.png" alt="Zakonski propisi" effect="blur" />
+              <LazyLoadImage src="img/prilagodba-propisima.webp" alt="Zakonski propisi" effect="blur" />
               <h2 className="text-center text-md-start">
                 Prilagodba propisima
               </h2>

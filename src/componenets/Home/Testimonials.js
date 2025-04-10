@@ -1,59 +1,64 @@
 import React from 'react'
 import './Testimonials.css'
 import CustomSlider from './CustomSlider'
+import { SwiperSlide } from 'swiper/react'
 
 function Testimonials() {
   return (
     <section className="testimonials">
-    <div className="container">
+      <div className="container">
         <CustomSlider slidesNbr={3}>
- 
-        <div className="d-flex justify-content-center mb-2">
-          <div className="testimonial-card">
-            <div className="testimonial-content">
-              <img src="https://placehold.co/600x400" alt="Person" className="testimonial-image" />
-              <div className="testimonial-details">
-                <h3 className="testimonial-name">Ivan Horvat</h3>
-                <p className="testimonial-title">Pozicija/kompanija</p>
-                <p className="testimonial-message">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quas fugit aspernatur explicabo id amet distinctio aliquam impedit architecto quidem?
-                </p>
+        <SwiperSlide>
+          <div className="d-flex justify-content-center mb-2">
+            <div className="testimonial-card">
+              <div className="testimonial-content">
+                <img src="https://placehold.co/100x100?text=MM" alt="Mirna Marić" className="testimonial-image" />
+                <div className="testimonial-details">
+                  <h3 className="testimonial-name">Mirna Marić</h3>
+                  <p className="testimonial-title">Zagreb</p>
+                  <p className="testimonial-message">
+                    “Od početne konzultacije do završetka montaže – sve je bilo jasno, brzo i bez stresa. Ekipa je stvarno profesionalna i ljubazna.”
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div className="d-flex justify-content-center">
-          <div className="testimonial-card">
-            <div className="testimonial-content">
-              <img src="https://placehold.co/600x400" alt="Person" className="testimonial-image" />
-              <div className="testimonial-details">
-                <h3 className="testimonial-name text-center">Ivan Horvat</h3>
-                <p className="testimonial-title text-center">Pozicija/kompanija</p>
-                <p className="testimonial-message">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quas fugit aspernatur explicabo id amet distinctio aliquam impedit architecto quidem?
-                </p>
+          </SwiperSlide>
+          <SwiperSlide>
+          <div className="d-flex justify-content-center">
+            <div className="testimonial-card">
+              <div className="testimonial-content">
+                <img src="https://placehold.co/100x100?text=JP" alt="Josip Perković" className="testimonial-image" />
+                <div className="testimonial-details">
+                  <h3 className="testimonial-name text-center">Josip Perković</h3>
+                  <p className="testimonial-title text-center">Osijek</p>
+                  <p className="testimonial-message">
+                    “Računi za struju su mi prepolovljeni! Preporučio bih ih svakome tko razmišlja o solarima. Sve su odradili u roku i objasnili mi svaki korak.”
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div className="d-flex justify-content-center">
-          <div className="testimonial-card">
-            <div className="testimonial-content">
-              <img src="https://placehold.co/600x400" alt="Person" className="testimonial-image" />
-              <div className="testimonial-details">
-                <h3 className="testimonial-name">Ivan Horvat</h3>
-                <p className="testimonial-title">Pozicija/kompanija</p>
-                <p className="testimonial-message">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae omnis molestias sequi nemo quasi, veritatis vitae consequuntur corporis. Veniam repudiandae fugiat delectus fugit recusandae veritatis obcaecati, omnis, quisquam dolore suscipit, iste sapiente culpa ut molestias? Iure dolores nostrum, eum amet corporis similique reprehenderit unde aliquid porro sunt ullam laboriosam soluta modi quo, harum quas magnam? Error, doloribus recusandae. At obcaecati ducimus aperiam, quidem fugiat consectetur quas sint quaerat mollitia culpa eligendi totam sapiente incidunt, laudantium error voluptatem consequuntur suscipit laborum exercitationem repellat, commodi aliquam! Suscipit officia modi dignissimos, ut quam quo necessitatibus eveniet tempora tempore eaque nulla est cupiditate deserunt neque! Tempore modi exercitationem repudiandae voluptatem nihil magnam et quia minus harum molestias illo excepturi nesciunt culpa veniam inventore, numquam voluptatum. Ratione beatae reiciendis, quos pariatur corrupti eos tenetur cupiditate optio animi laudantium temporibus molestiae, fugiat inventore amet ut veritatis atque doloribus eligendi et est? Quia explicabo rerum est illum qui harum vel nisi libero nihil reprehenderit amet, doloribus necessitatibus neque consectetur sapiente omnis voluptas voluptatum mollitia recusandae, dicta, distinctio tempore accusamus labore facere. Voluptas harum quidem atque suscipit qui vel rerum consectetur. Sunt, pariatur quo doloribus praesentium itaque obcaecati facilis necessitatibus asperiores culpa illum ducimus nemo ex unde debitis quod temporibus, quas vel vitae. Voluptates ut rerum obcaecati sit incidunt maxime voluptatem? Soluta qui sit fugit facere possimus animi dicta provident adipisci labore illum doloribus libero vero rerum numquam minima explicabo ratione sequi accusamus asperiores, tenetur consequatur delectus! Molestias qui quod illum recusandae officia ad hic? Dolores nam facilis, ducimus fuga id provident rem reiciendis dolor autem molestiae alias eum nobis rerum sed a quam reprehenderit numquam repellendus? Consequuntur, corrupti. Quasi rem doloribus non impedit culpa fugiat quidem laborum soluta temporibus. Asperiores ex et fugit quod error deleniti in laudantium culpa itaque pariatur porro quam atque cum dicta inventore dignissimos officia excepturi consectetur, libero, nobis rem voluptate repellat nemo debitis! Laboriosam similique, hic atque nemo voluptas possimus beatae impedit quidem eaque dicta. Exercitationem dignissimos aliquam rem, culpa fugiat reiciendis tenetur. Temporibus consectetur aliquam sed, quas sit nam nemo tempora officia! Qui necessitatibus inventore corrupti ut officiis minima reiciendis id amet consequatur blanditiis commodi reprehenderit delectus, natus facilis temporibus ipsum voluptatum beatae aliquid pariatur. Dolores quas veritatis doloremque dolorum velit! Esse officia enim beatae praesentium iure dignissimos amet fugit perspiciatis, cupiditate alias perferendis culpa accusamus error obcaecati non, aperiam pariatur sed numquam! Facilis impedit quae asperiores dolorem quas vitae, quia sunt laboriosam tempore minus id odit incidunt. Molestias sint enim voluptatum animi nam, laudantium, nulla quaerat non culpa, iure officiis nisi dolore? Fuga doloribus eius odit molestias rem soluta iste molestiae corrupti asperiores vitae sint quod atque perspiciatis, velit voluptatem minima eveniet dicta distinctio magni dolore perferendis eligendi possimus. Vel at omnis, exercitationem eveniet amet dignissimos laudantium veritatis alias optio et suscipit officia debitis consequuntur nam ducimus repellendus possimus blanditiis! Labore eum cum veritatis dolores quia odio quis deleniti voluptatibus ea ab fugiat esse nobis adipisci sint quod iure, quam dolor saepe? Suscipit odit dolores velit necessitatibus nemo? Nam cumque in consectetur inventore, facere nihil recusandae assumenda, id laborum ea sed nobis molestias minima, fuga ab omnis tempore sit natus. Consectetur molestiae hic voluptatum, id aspernatur asperiores ut amet fugit rerum qui ipsam? Nam repellendus doloremque culpa vero ullam quas, corporis laborum excepturi vel officia autem iure magnam sunt sapiente quam eius illo inventore! Autem similique tempore est ut ipsum veritatis, voluptate, officiis, optio eligendi aperiam ipsa alias dolor iste eum assumenda. Culpa quis magnam illum ducimus fugit molestiae saepe dolore. Veritatis dignissimos molestiae ipsam neque rerum dolor laboriosam esse inventore. Iusto tempore quam pariatur qui illum at expedita minima, amet fuga aperiam aut voluptate est voluptatem consequuntur error reiciendis dignissimos? Sed doloribus, hic laboriosam, pariatur nam ea quibusdam rerum illo odit qui dignissimos, laudantium error officiis quis ut deserunt natus id necessitatibus porro molestias excepturi labore aspernatur possimus! Doloribus autem, error temporibus laudantium voluptates totam, et impedit officia quibusdam praesentium incidunt placeat quia iste nulla illum provident nesciunt cupiditate ut eveniet. Asperiores vero harum repellendus obcaecati praesentium vitae inventore consequuntur omnis est distinctio eveniet animi vel repudiandae, error labore tempore porro consectetur magni illum pariatur aspernatur excepturi necessitatibus? At repudiandae alias adipisci. Cum soluta aut eaque distinctio dolore maiores beatae. Suscipit veniam, sunt laboriosam ipsa quidem totam. Beatae ad facere quia harum, molestiae pariatur reprehenderit cum assumenda, sit blanditiis, eligendi dolorem velit magni autem dicta deserunt neque! Quae hic, voluptatem officiis consequuntur explicabo saepe quis, vitae temporibus delectus enim quod officia nobis odit facere nisi soluta. Unde ea iusto deserunt nihil illum corporis ex! Itaque consequatur illum iusto rerum blanditiis amet, quidem veritatis eligendi magni et dignissimos odio dolorem nobis ea error autem velit expedita ut id officiis, corporis quibusdam! Numquam, fuga dolore aspernatur, voluptate maiores quasi nobis vero quos consequuntur odio assumenda cumque hic aliquam excepturi perspiciatis impedit, adipisci a nam quisquam voluptas soluta ullam doloremque. Ipsa neque excepturi cum officiis mollitia nam dicta quasi assumenda qui. Officia architecto adipisci exercitationem maiores, ullam temporibus numquam dolore quibusdam a, laborum reiciendis odit. Quam fugit inventore recusandae cum consectetur incidunt esse perferendis ducimus quod, exercitationem eligendi, sint, asperiores beatae fuga quibusdam ea reiciendis eum quaerat libero maiores! Esse voluptatibus, ea a laudantium sint dignissimos ducimus officia consectetur dicta tempore quas. Magnam veritatis earum in dolore quia facere quis cumque. Accusantium temporibus hic consequuntur veniam dignissimos dolores nesciunt incidunt quisquam voluptates possimus, aliquam minima. Soluta aut voluptate tenetur officia exercitationem! Temporibus qui nobis, amet corrupti obcaecati quo, atque vitae odit incidunt voluptatem consectetur excepturi minima cumque. Laudantium architecto rerum eius fuga ipsa asperiores dicta dolores perferendis exercitationem reiciendis hic, harum, repudiandae, vitae aut cumque iste beatae? Recusandae, rem. Veritatis, inventore at quod tempora quisquam minus soluta, neque consectetur eveniet perferendis, amet possimus aspernatur. Nostrum, dolore. Odio facilis accusantium obcaecati necessitatibus, blanditiis pariatur non ea iure! Reprehenderit, dolorum sunt magnam ullam reiciendis debitis iusto deleniti excepturi voluptates voluptate quod, expedita ea molestias consequatur. Magni nostrum repellendus ad. Aut cupiditate eum vero quae quos possimus soluta perferendis, officiis debitis, consequatur in ducimus ab recusandae necessitatibus, dolorem nemo nesciunt quidem quaerat! Explicabo voluptatibus aspernatur quas, temporibus consequuntur vero dolor magnam, pariatur, possimus impedit voluptates sint earum blanditiis sit obcaecati ipsum? Inventore, ut. Velit laboriosam, temporibus minima quae ex explicabo culpa, rerum, veritatis sit blanditiis quos facilis quidem quod quam. Reprehenderit itaque aspernatur quibusdam odio perspiciatis nesciunt id illum enim, inventore minima quos corporis. Vero cumque at vitae, ab iure corrupti ipsa ex expedita earum culpa optio rem, reiciendis necessitatibus dignissimos minima? Obcaecati excepturi quidem iure error ea. Doloribus voluptatibus tenetur quasi vel, facere consectetur vitae debitis provident magnam facilis sint excepturi optio tempore explicabo similique sunt temporibus rerum molestias quam alias illum unde itaque nemo animi? Doloribus beatae explicabo aliquam adipisci? Eaque, iure alias, laborum, quis odio non error quae eum ab qui sint libero. Ea deserunt consequatur sequi cupiditate illum architecto commodi ducimus placeat in autem dolores magni omnis delectus libero, tempora quidem eius perspiciatis doloremque, rem praesentium aliquam labore incidunt. Aperiam sed hic accusamus doloribus natus enim, asperiores quasi quo quos excepturi velit doloremque commodi laudantium facere amet assumenda perferendis nobis non voluptatum itaque sint ex molestiae illum! Odio, sit inventore nisi impedit amet illo praesentium sequi iusto exercitationem non similique velit laudantium vitae nemo quasi? Exercitationem et fugit eius blanditiis corporis ea facere reprehenderit. Ipsam, culpa repudiandae! Cupiditate architecto, obcaecati omnis aperiam nemo quos exercitationem, dolore praesentium dignissimos necessitatibus impedit adipisci mollitia est! Facilis nam rerum et! Deleniti nulla consequuntur et, libero doloremque numquam possimus ad modi voluptatibus perferendis error! Sit recusandae natus, dicta commodi, qui debitis illo libero deleniti soluta nulla corrupti nam atque quia quos laudantium deserunt quidem eum. Hic porro mollitia laborum officia totam possimus labore eaque voluptate. Autem obcaecati rem placeat accusamus expedita iste dolore iusto, ducimus maiores atque. Vel hic pariatur minima recusandae quos iure placeat fuga quia rem vitae! Eos atque quaerat labore reprehenderit itaque exercitationem magnam in repudiandae? Minus ab aliquid officiis at nihil quas praesentium culpa non veniam quam modi, in quis nostrum repellat laborum aperiam, beatae impedit sunt facere amet velit dolorem nisi! Harum nihil molestiae assumenda quam delectus dolorum tempora ad minima atque beatae necessitatibus nostrum, modi facilis distinctio. Dolorum cum quas consequuntur possimus repellat officia asperiores tenetur pariatur, at expedita quaerat natus iure, temporibus, illo architecto dolorem quibusdam. Nulla esse quisquam, fugiat debitis molestiae vero eum. Fugiat ab at debitis officiis hic dignissimos dolor, fuga architecto expedita! Voluptates totam vel veritatis magni ipsum illo minus exercitationem unde, distinctio, ad tempore voluptas dolorum minima praesentium voluptatibus natus ipsa fugit beatae atque eaque. Necessitatibus hic saepe blanditiis aspernatur ipsam ipsum reiciendis voluptate beatae voluptates, quo nesciunt soluta labore architecto. Explicabo pariatur assumenda quaerat tempora cum vel quam autem, accusamus soluta odio omnis dolor voluptates voluptatibus ipsum? Libero perferendis accusamus dolorem, nobis repellendus officia? Eos quod reprehenderit impedit provident qui est soluta obcaecati, eligendi facere atque amet commodi quidem assumenda ratione quasi ipsa, molestiae unde alias optio blanditiis, dicta adipisci. Labore neque deleniti sunt quidem in architecto harum unde temporibus facere! Hic, vero.
-                </p>
+          </SwiperSlide>
+          <SwiperSlide>
+          <div className="d-flex justify-content-center">
+            <div className="testimonial-card">
+              <div className="testimonial-content">
+                <img src="https://placehold.co/100x100?text=AK" alt="Ante Kovač" className="testimonial-image" />
+                <div className="testimonial-details">
+                  <h3 className="testimonial-name">Ante Kovač</h3>
+                  <p className="testimonial-title">Split</p>
+                  <p className="testimonial-message">
+                    “Nisam znao odakle početi, ali su mi sve detaljno objasnili. Instalacija je gotova za dva dana, a sustav radi savršeno. Hvala još jednom!”
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      
-      </CustomSlider>
-    </div>
-  </section>
+          </SwiperSlide>
+        </CustomSlider>
+      </div>
+    </section>
   )
 }
 

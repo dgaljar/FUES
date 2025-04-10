@@ -9,8 +9,10 @@ import Home from "./componenets/Home/Home";
 import ContactPage from "./componenets/Contact/ContactPage";
 import About from "./componenets/About/About";
 import News from "./componenets/News/News";
+import OurWork from "./componenets/OurWork/OurWork";
 import NewsSingle from "./componenets/News/NewsSingle";
 import Cookies from "./componenets/Cookies/Cookies";
+import PrivacyPolicy from "./componenets/PrivacyPolicy/PrivacyPolicy";
 import NotFound from "./componenets/Home/NotFound"
 
 function App() {
@@ -24,8 +26,10 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/kontakt" element={<ContactPage />} />
           <Route path="/o-nama" element={<About />} />
+          <Route path="/nasi-radovi" element={<OurWork />} />
           <Route path="/novosti" element={<News />} />
           <Route path="/novosti/:slug" element={<NewsSingle />} />
+          <Route path="/politika-privatnosti" element={<PrivacyPolicy />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
 

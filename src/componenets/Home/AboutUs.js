@@ -46,9 +46,9 @@ function AboutUs() {
       }, 10);
     };
 
-    animateCounter(setProjects, 15);
-    animateCounter(setUsers, 400);
-    animateCounter(setEnergy, 1500);
+    animateCounter(setProjects, 685);
+    animateCounter(setUsers, 700);
+    animateCounter(setEnergy, 5200);
   };
 
   return (
@@ -63,7 +63,7 @@ function AboutUs() {
         <div className="row">
           <div className="col-md-6">
             <div className="aboutImg p-4">
-              <LazyLoadImage src="img/about.jpg" alt="Instalacija solarnih panela" effect="blur" />
+              <LazyLoadImage src="img/about.webp" alt="Instalacija solarnih panela" effect="blur" />
             </div>
           </div>
           <div className="col-md-6">
@@ -80,7 +80,7 @@ function AboutUs() {
                 pozitivan trag za generacije koje dolaze.
               </p>
             </div>
-            <div className="aboutNumbers d-flex flex-column flex-md-row justify-content-between p-md-4">
+            <div className="aboutNumbers d-flex flex-column flex-md-row justify-content-around p-md-4">
               <div className="counterHolder">
                 <div className="counter">{projects}+</div>
                 <div className="counterTitle">Projekata</div>
@@ -90,7 +90,7 @@ function AboutUs() {
                 <div className="counterTitle">Korisnika</div>
               </div>
               <div className="counterHolder">
-                <div className="counter">{energy} MW</div>
+                <div className="counter"> {'>'+energy} KW</div>
                 <div className="counterTitle">Energije</div>
               </div>
             </div>

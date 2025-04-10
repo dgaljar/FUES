@@ -19,3 +19,45 @@
   .nav-item a:not(.btn-nav):hover::after {
     transform: scaleX(1);
   }
+
+  .navbar-line {
+    display: block;
+    width: 25px;
+    border-radius: 8px;
+    height: 4px;
+    background-color: var(--dark-secondary);
+    transition: all 200ms ease;
+}
+
+.navbar-toggler {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  gap: 4px;
+}
+
+.navbar-line {
+  display: block;
+  width: 25px;
+  border-radius: 8px;
+  height: 4px;
+  margin-right: 5px;
+  background-color: var(--dark);
+  transition: all 200ms ease;
+}
+
+
+.navbar-toggler[aria-expanded=true] .navbar-line:nth-child(1){
+  transform: translateY(8px) rotate(135deg);
+  top: 4px;
+}
+.navbar-toggler[aria-expanded=true] .navbar-line:nth-child(2){
+  transform: translateX(200%)
+}
+.navbar-toggler[aria-expanded=true] .navbar-line:nth-child(3){
+  transform: translateY(-8px) rotate(-135deg);
+  top: 4px;
+}

@@ -3,6 +3,7 @@
 .services {
     margin-top: 8rem;
     margin-bottom: 3rem;
+    overflow: hidden;
 
     h2 {
         font-size: clamp(2.25rem, 1.8088rem + 1.7647vw, 2rem);
@@ -12,12 +13,12 @@
 .services img {
     object-fit: cover;
     width: 100%;
+    max-width: 100%;
     height: 190px;
     border-radius: 1rem;
     box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
     margin-bottom: 1rem;
 }
-
 .serviceInfo {
     border-radius: 1rem;
 
@@ -25,5 +26,4 @@
 
 .serviceImgLeft, .serviceInfo, .serviceImgright {
     height: 100%;
-
 }
