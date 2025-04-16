@@ -1,14 +1,13 @@
 import React from 'react'
 import './Testimonials.css'
 import CustomSlider from './CustomSlider'
-import { SwiperSlide } from 'swiper/react'
 
 function Testimonials() {
   return (
     <section className="testimonials">
       <div className="container">
-        <CustomSlider slidesNbr={3}>
-        <SwiperSlide>
+        <CustomSlider slidesNbr={3} auto={false}>
+        <div>
           <div className="d-flex justify-content-center mb-2">
             <div className="testimonial-card">
               <div className="testimonial-content">
@@ -23,8 +22,8 @@ function Testimonials() {
               </div>
             </div>
           </div>
-          </SwiperSlide>
-          <SwiperSlide>
+          </div>
+          <div>
           <div className="d-flex justify-content-center">
             <div className="testimonial-card">
               <div className="testimonial-content">
@@ -39,8 +38,8 @@ function Testimonials() {
               </div>
             </div>
           </div>
-          </SwiperSlide>
-          <SwiperSlide>
+          </div>
+          <div>
           <div className="d-flex justify-content-center">
             <div className="testimonial-card">
               <div className="testimonial-content">
@@ -55,7 +54,7 @@ function Testimonials() {
               </div>
             </div>
           </div>
-          </SwiperSlide>
+          </div>
         </CustomSlider>
       </div>
     </section>

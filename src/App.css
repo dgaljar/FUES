@@ -83,8 +83,8 @@ h2 {
   display: flex;
 }
 
-.swiper-wrapper {
-  justify-content: center;
+.slick-slider {
+  overflow: hidden;
 }
 
 .privacy-policy {

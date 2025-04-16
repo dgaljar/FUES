@@ -1,6 +1,6 @@
 import React from "react";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 import "./WhyUs.css";
 
 function WhyUs() {
@@ -19,7 +19,13 @@ function WhyUs() {
           </div>
           <div className="col-md-6">
             <div className="whyUsImg">
-              <LazyLoadImage src="img/FUES_web_grafika.webp" alt="Obnovljiva energija" effect="blur" />
+              <LazyLoadImage
+                src="img/FUES_web_grafika.webp"
+                alt="Obnovljiva energija"
+                effect="blur"
+                placeholderSrc="img/placeholder/FUES_web_grafika-1-placeholder.webp"
+                visibleByDefault={true}
+              />
             </div>
           </div>
         </div>

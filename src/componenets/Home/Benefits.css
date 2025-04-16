@@ -1,0 +1,37 @@
+/* benefits */
+
+.benefits {
+    margin-bottom: 3rem;
+
+}
+
+.benefits img {
+    max-height: 700px;
+    object-fit: cover;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+}
+
+.benefitsText {
+    height: 100%;
+}
+
+.benefitHolder {
+    display: flex;
+    align-content: center;
+    margin-bottom: 2rem;
+}
+
+.benefitBenefit h3 {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.benefitIcon {
+    display: grid;
+    place-items: center;
+    padding: 1rem;
+    margin-right: 1rem;
+}
+
+

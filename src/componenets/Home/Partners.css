@@ -2,6 +2,17 @@
 
 .partneri {
     margin-bottom: 3rem;
+
+    .swiper {
+        height: 150px;
+    }
+
+    img {
+        object-fit: contain;
+        width: 200px;
+        height: 150px;
+    }
+
 }
 
 .slick-slide {
@@ -13,4 +24,9 @@
 
 .partners img{
     width: 100px;
+    transition: all 500ms ease-in-out;
+}
+
+.partners img:hover {
+    transform: scale(1.1);
 }

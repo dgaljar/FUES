@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 import "./Services.css";
 import "animate.css";
 
@@ -31,14 +31,20 @@ function Services() {
       ref={sectionRef}
       id="services"
       className={`services ${
-        isVisible ? "animate__animated animate__slideInUp" : ""
+        isVisible ? "animate__animated animate__fadeIn" : ""
       }`}
     >
       <div className="container">
         <div className="row">
           <div id="services1" className="col-md-4 animate__animated">
             <div className="serviceInfo d-flex flex-column justify-content-between align-items-center p-4">
-              <LazyLoadImage src="img/solarne-elektrane.webp" alt="Solarne elektrane" effect="blur" />
+              <LazyLoadImage
+                src="img/solarne-elektrane.webp"
+                alt="Solarne elektrane"
+                effect="blur"
+                placeholderSrc="img/placeholder/solarne-elektrane-1-placeholder.webp"
+                visibleByDefault={true}
+              />
               <h2 className="text-center text-md-start">Solarne eleketrane</h2>
               <p>
                 Početak naše vizije stavlja fotonaponske sustave u prvi plan,
@@ -54,7 +60,13 @@ function Services() {
           </div>
           <div id="services2" className="col-md-4 animate__animated">
             <div className="serviceInfo d-flex flex-column justify-content-between align-items-center p-4">
-              <LazyLoadImage src="img/inovativne-tehnologije.webp" alt="Inovativna tehnologija" effect="blur" />
+              <LazyLoadImage
+                src="img/inovativne-tehnologije.webp"
+                alt="Inovativna tehnologija"
+                effect="blur"
+                placeholderSrc="img/placeholder/inovativne-tehnologije-1-placeholder.webp"
+                visibleByDefault={true}
+              />
               <h2 className="text-center text-md-start">
                 Inovativna Tehnologija
               </h2>
@@ -73,7 +85,13 @@ function Services() {
           </div>
           <div id="services3" className="col-md-4 animate__animated">
             <div className="serviceInfo d-flex flex-column justify-content-between align-items-center p-4">
-              <LazyLoadImage src="img/prilagodba-propisima.webp" alt="Zakonski propisi" effect="blur" />
+              <LazyLoadImage
+                src="img/prilagodba-propisima.webp"
+                alt="Zakonski propisi"
+                effect="blur"
+                placeholderSrc="img/placeholder/prilagodba-propisima-1-placeholder.webp"
+                visibleByDefault={true}
+              />
               <h2 className="text-center text-md-start">
                 Prilagodba propisima
               </h2>

@@ -116,14 +116,13 @@ function ContactForm() {
                 ) : (
                   <div className="col-12 text-center captcha-container">
                     <ReCAPTCHA
-                      sitekey={"6LctqPoqAAAAAA_hzF6ysFeiXw6_tHENQ-4HWIkA"} // Zamijeniti s tvojim reCAPTCHA ključem
+                      sitekey={"6LfEPBgrAAAAAJVusqyL2K-WpRs3xq-ht-6Tp9IF"} 
                       onChange={(value) => setCaptchaValue(value)}
                     />
                     {captchaValue && (
                       <button
                         className="mt-2 m-auto"
-                        type="button"
-                        onClick={sendEmail}
+                        type="submit"
                         style={{
                           backgroundColor:
                             status === "success"

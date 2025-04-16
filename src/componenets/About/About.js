@@ -1,16 +1,38 @@
 import React from "react";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 import "./About.css";
 
 function About() {
   return (
     <main className="about">
+      <section className="hero mt-2 mt-mb-0">
+        <picture>
+          <source media="(max-width: 768px)" srcSet="/img/about_cover-768.webp" />
+          <source media="(max-width: 1280px)" srcSet="/img/about_cover-1280.webp" />
+          <img
+            src="/img/about_cover-1920.webp"
+            alt="Solarni paneli na krovu"
+            className="hero-bg"
+            loading="eager"
+            fetchPriority="high"
+          />
+        </picture>
+
+        <div className="container">
+          <div className="row">
+            <div className="col-12 d-flex justify-content-center">
+              <div className="heroTitle d-flex flex-column align-items-center">
+              <h1>O nama</h1>
+              <h2>Vaš partner na putu prema održivoj budućnosti</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <div className="container">
         <div className="row p-5 d-flex justify-content-center">
           <div className="aboutinfo">
-            <h1>O nama</h1>
-            <h2>Vaš partner na putu prema održivoj budućnosti</h2>
             <p>
               Mi smo tvrtka koja se već više od 20 godina bavi stvaranjem
               održivih energetski učinkovitih rješenja. Naša strast prema

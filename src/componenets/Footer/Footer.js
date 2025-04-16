@@ -36,16 +36,16 @@ function Footer() {
           <div className="col-md-8 text-center text-md-end">
           <ul className="footerSocial">
               <li>
-                <Link href="/o-nama">O nama</Link>
+                <Link to="/o-nama">O nama</Link>
               </li>
               <li>
-                <Link href="/Kontakt">Kontak</Link>
+                <Link to="/Kontakt">Kontak</Link>
               </li>
               <li>
-                <Link href="/Novosti">Novosti</Link>
+                <Link to="/Novosti">Novosti</Link>
               </li>
               <li>
-                <Link href="/politika-privatnosti">Politika privatnosti</Link>
+                <Link to="/politika-privatnosti">Politika privatnosti</Link>
               </li>
             </ul>
             <ul className="footerSocial">

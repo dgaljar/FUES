@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 import "./AboutUs.css";
 import "animate.css";
 
@@ -56,14 +56,20 @@ function AboutUs() {
       ref={sectionRef}
       id="aboutus"
       className={`aboutus ${
-        isVisible ? "animate__animated animate__slideInUp" : ""
+        isVisible ? "animate__animated animate__fadeIn" : ""
       }`}
     >
       <div className="container">
         <div className="row">
           <div className="col-md-6">
             <div className="aboutImg p-4">
-              <LazyLoadImage src="img/about.webp" alt="Instalacija solarnih panela" effect="blur" />
+              <LazyLoadImage
+                src="img/about.webp"
+                alt="Instalacija solarnih panela"
+                effect="blur"
+                placeholderSrc="img/placeholder/about-1-placeholder.webp"
+                visibleByDefault={true}
+              />
             </div>
           </div>
           <div className="col-md-6">
@@ -90,7 +96,7 @@ function AboutUs() {
                 <div className="counterTitle">Korisnika</div>
               </div>
               <div className="counterHolder">
-                <div className="counter"> {'>'+energy} KW</div>
+                <div className="counter"> {">" + energy} KW</div>
                 <div className="counterTitle">Energije</div>
               </div>
             </div>

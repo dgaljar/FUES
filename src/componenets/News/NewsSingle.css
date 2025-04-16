@@ -1,5 +1,5 @@
 .news-single {
-
+    min-height: calc(100vh - 72px);
 
     h1 {
         font-size: 3rem;

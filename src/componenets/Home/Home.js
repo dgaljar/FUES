@@ -10,6 +10,7 @@ import Faq from './Faq'
 import ContactForm from './ContactForm'
 
 function Home() {
+  
   return (
     <main>
         <Hero />
